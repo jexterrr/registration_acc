@@ -4,9 +4,10 @@ from functions import display_record
 
 def search_account():
     print("""
+    ==============================
         Account Registration
             Search Account
-
+    ==============================
     """)
 
     user_input = get_input()
