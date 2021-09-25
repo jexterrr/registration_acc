@@ -3,9 +3,9 @@ import database
 
 def delete_account():
     print("""
-        Account Registration
-            Delete Account
-
+    =================================
+         Delete Account Section
+    =================================
     """)
     user_input = get_input()
 
@@ -14,9 +14,9 @@ def delete_account():
             del user['name']
             del user['username']
             del user['password']
-            print('Account deleted!')
+            print("Account deleted!")
 
 
 def get_input():
-    user_input = input('Enter username of the account you want to delete: ')
+    user_input = input("Enter username of the account you want to delete: ")
     return user_input

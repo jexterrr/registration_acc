@@ -4,9 +4,9 @@ from functions import display_record
 
 def edit_account():
     print("""
-        Account Registration
-            Edit Account
-
+    =================================
+           Account Edit Secton
+    =================================
     """)
 
     user_input = get_input()
@@ -19,9 +19,11 @@ def edit_account():
             user['name'] = new_name
             user['username'] = new_username
             user['password'] = new_password
+        else:
+            print("Account does not exist.")
 
 
 def get_input():
-    user_input = input("Enter account username to edit: ")
+    user_input = input("Enter username to edit account: ")
     display_record.display_record(user_input)
     return user_input

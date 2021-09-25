@@ -2,12 +2,12 @@ import database
 
 
 def add_account():
-    print(
-        """
-    Account Registration
-         Add Account
-    """
-    )
+    print("""
+    =================================
+          Account Registration
+               Add Account
+    =================================
+    """)
 
     get_input()
 
@@ -20,6 +20,7 @@ def get_input():
     store_to_DB(name, username, password)
 
 
+# DISCIONARY \\\ DATA BASE
 def store_to_DB(name, username, password):
     user_dict = dict()
     user_dict['name'] = name

@@ -2,37 +2,41 @@ from functions import add_account, display_record, edit_account, delete_account,
 
 
 def main_menu():
-    print(
-        """
+    print("""
     =================================
-    Account Registration
-         Menu
+           Account Registration
+                 Menu
 
-    [A] - Add
-    [E] - Edit
-    [D] - Delete
-    [S] - Search
-    [R] - Display Record
+      [A] - Add
+      [E] - Edit
+      [D] - Delete
+      [S] - Search
+      [R] - Display Record
     =================================
-    """
-    )
+    """)
 
     user_input = get_input()
 
-    if user_input.lower() == 'a':
-        add()
-
-    if user_input.lower() == 'r':
-        display()
-
-    if user_input.lower() == 'e':
-        edit()
-
-    if user_input.lower() == 'd':
-        delete()
-
-    if user_input.lower() == 's':
-        search()
+    while user_input:
+        # A - ADD
+        if user_input.lower() == 'a':
+            add()
+        # E - EDIT
+        if user_input.lower() == 'e':
+            edit()
+        # D - DELETE
+        if user_input.lower() == 'd':
+            delete()
+        # S - SEARCH
+        if user_input.lower() == 's':
+            search()
+        # R - DISPLAY RECORD
+        if user_input.lower() == 'r':
+            display()
+        else:
+            print("Choose certain letter.")
+            main_menu()
+            get_input()
 
 
 def get_input():
