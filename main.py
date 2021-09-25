@@ -4,6 +4,7 @@ from functions import add_account, display_record, edit_account, delete_account,
 def main_menu():
     print(
         """
+    =================================
     Account Registration
          Menu
 
@@ -12,7 +13,7 @@ def main_menu():
     [D] - Delete
     [S] - Search
     [R] - Display Record
-    
+    =================================
     """
     )
 
